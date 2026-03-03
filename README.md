@@ -1,10 +1,10 @@
-# Advance Engineering Company - Official Website
+# Arshee Engineering Company - Official Website
 
 ![Project Status](https://img.shields.io/badge/status-active-success)
 ![Version](https://img.shields.io/badge/version-0.0.0-blue)
 ![Tech Stack](https://img.shields.io/badge/stack-React_Vite_Supabase-orange)
 
-The official web platform for **Advance Engineering Company**, an Indian engineering firm credentialed by RDSO (Research Designs and Standards Organisation). This project showcases the company's role in the **Make in India** initiative, specifically focusing on **Instrumented Measuring Wheelsets (IMWs)** for Indian Railways.
+The official web platform for **Arshee Engineering Company**, an Indian engineering firm credentialed by RDSO (Research Designs and Standards Organisation). This project showcases the company's role in the **Make in India** initiative, specifically focusing on **Instrumented Measuring Wheelsets (IMWs)** for Indian Railways.
 
 The application is a high-performance, single-page application (SPA) featuring advanced animations, interactive 3D-like elements, and a custom AI-powered virtual assistant.
 
@@ -27,7 +27,7 @@ The application is a high-performance, single-page application (SPA) featuring a
 
 ## 🏢 About the Project
 
-Advance Engineering Company is a pioneer in the Indian transport sector, specializing in precision testing equipment. This website serves as both a corporate portfolio and a client communication tool.
+Arshee Engineering Company is a pioneer in the Indian transport sector, specializing in precision testing equipment. This website serves as both a corporate portfolio and a client communication tool.
 
 **Mission:** "Passionate about Precision Technology" — Challenging the status quo to craft a new legacy for India's transport sector.
 

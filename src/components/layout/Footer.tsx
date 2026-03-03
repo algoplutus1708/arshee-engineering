@@ -64,12 +64,12 @@ export function Footer() {
               <div className="mb-6">
                 <img 
                   src={logo} 
-                  alt="Advance Engineering" 
+                  alt="Arshee Engineering" 
                   className="h-20 w-auto rounded-lg bg-white p-1" 
                 />
               </div>
               <p className="mt-4 text-background/50 text-sm">
-                Advance Engineering Company
+                Arshee Engineering Company
               </p>
               <p className="mt-2 text-background/40 text-xs">
                 Passionate about Precision Technology
@@ -136,7 +136,7 @@ export function Footer() {
             className="mt-20 pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4"
           >
             <p className="text-sm text-background/40">
-              © {new Date().getFullYear()} Advance Engineering Company
+              © {new Date().getFullYear()} Arshee Engineering Company
             </p>
             <p className="text-sm text-background/40">Make in India Initiative</p>
           </motion.div>

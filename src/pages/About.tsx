@@ -99,7 +99,7 @@ export default function About() {
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.5 }}
                   src={engineeringLab}
-                  alt="Advance Engineering Company"
+                  alt="Arshee Engineering Company"
                   className="w-full rounded-3xl shadow-2xl shadow-foreground/5"
                 />
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

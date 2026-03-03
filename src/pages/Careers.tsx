@@ -101,7 +101,7 @@ export default function Careers() {
         <motion.img
           style={{ scale: imageScale }}
           src={engineeringLab}
-          alt="Advance Engineering Team"
+          alt="Arshee Engineering Team"
           className="w-full h-full object-cover"
         />
       </section>
@@ -124,7 +124,7 @@ export default function Careers() {
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <p className="mt-6 text-xl text-muted-foreground">
-                At Advance Engineering, we believe in building not just careers, but legacies.
+                At Arshee Engineering, we believe in building not just careers, but legacies.
               </p>
             </AnimatedSection>
           </div>

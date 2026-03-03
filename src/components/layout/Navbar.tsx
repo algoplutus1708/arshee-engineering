@@ -48,14 +48,14 @@ export function Navbar() {
         >
           <img 
             src={logo} 
-            alt="Advance Engineering Logo" 
+            alt="Arshee Engineering Logo" 
             className="h-10 w-auto rounded-sm object-contain" 
           />
           {/* Optional: Keep text for accessibility or if logo is icon-only, otherwise remove span below */}
           <span className={`text-lg font-semibold tracking-tight transition-colors duration-300 ${
             showNavbarBackground ? "text-foreground" : "text-white"
           }`}>
-            Advance Engineering
+            Arshee Engineering
           </span>
         </Link>
 

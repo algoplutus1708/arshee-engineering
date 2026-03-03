@@ -14,7 +14,7 @@ export function ChatBot() {
     {
       role: "assistant",
       // UPDATED: Added the name "Engie" to the greeting
-      content: "Hello! I'm Engie, the Advance Engineering assistant. How can I help you learn about our services or get in touch with us?",
+      content: "Hello! I'm Engie, the Arshee Engineering assistant. How can I help you learn about our services or get in touch with us?",
     },
   ]);
   const [input, setInput] = useState("");
