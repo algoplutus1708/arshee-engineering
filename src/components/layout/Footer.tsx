@@ -38,12 +38,12 @@ export function Footer() {
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <motion.a
-              href="mailto:hr@advanceng.in"
+              href="mailto:Info@arshee-enginv.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
               className="inline-flex items-center justify-center mt-12 px-10 py-5 rounded-full bg-foreground text-background font-medium text-lg transition-colors hover:bg-foreground/90"
             >
-              Send your CV to hr@advanceng.in
+              Send your CV to Info@arshee-enginv.com
               <ArrowRight className="ml-2 w-5 h-5" />
             </motion.a>
           </AnimatedSection>
@@ -108,11 +108,11 @@ export function Footer() {
               <div className="space-y-3 text-background/80">
                 <p>
                   <motion.a
-                    href="mailto:info@advanceng.in"
+                    href="mailto:Info@arshee-enginv.com"
                     whileHover={{ x: 4 }}
                     className="inline-block hover:text-background transition-colors"
                   >
-                    info@advanceng.in
+                    Info@arshee-enginv.com
                   </motion.a>
                 </p>
                 <p>

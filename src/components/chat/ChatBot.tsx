@@ -110,7 +110,7 @@ export function ChatBot() {
         ...prev,
         {
           role: "assistant",
-          content: "I apologize, but I'm having trouble responding right now. Please try again or contact us directly at info@advanceng.in",
+          content: "I apologize, but I'm having trouble responding right now. Please try again or contact us directly at Info@arshee-enginv.com",
         },
       ]);
     } finally {

@@ -37,8 +37,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "info@advanceng.in",
-    href: "mailto:info@advanceng.in",
+    value: "Info@arshee-enginv.com",
+    href: "mailto:Info@arshee-enginv.com",
   },
   {
     icon: MapPin,
@@ -434,7 +434,7 @@ export default function Contact() {
 
           <AnimatedSection delay={0.2}>
             <motion.a
-              href="mailto:info@advanceng.in"
+              href="mailto:Info@arshee-enginv.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
               className="inline-flex items-center justify-center mt-12 px-10 py-5 rounded-full bg-background text-foreground font-medium text-lg transition-colors hover:bg-background/90"
