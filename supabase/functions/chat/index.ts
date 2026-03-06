@@ -36,8 +36,8 @@ TECHNICAL DEEP DIVE (IMW & TELEMETRY):
    - Stage 5: Dynamic Validation (Field trials with RDSO).
 
 COMPANY PROFILE:
-- Founder: Mrs. Srabanti Ghosh (Visionary leadership).
-- Technical Insight: Mr. Tirthankar Ghosh.
+- Leadership: Visionary and innovation-driven.
+- Technical Insight: Delivered by an experienced engineering team.
 - Location: 6/41 Netaji Nagar, Kolkata - 700091.
 - Contact: Info@arshee-enginv.com | 033 451 80382
 - HR: Info@arshee-enginv.com

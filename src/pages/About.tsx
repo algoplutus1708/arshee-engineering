@@ -121,30 +121,23 @@ export default function About() {
               <div className="space-y-6">
                 <AnimatedSection delay={0.3}>
                   <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                    Founded by{" "}
-                    <span className="text-foreground font-medium">
-                      Mrs. Srabanti Ghosh
-                    </span>{" "}
-                    in 2020. A visionary entrepreneur from a distinguished business
-                    family, she emphasizes forward-thinking strategies that position
-                    India at the forefront of precision engineering.
+                    Founded in 2020, Arshee Engineering Company is driven by
+                    visionary leadership and forward-thinking strategies that
+                    position India at the forefront of precision engineering.
                   </p>
                 </AnimatedSection>
                 <AnimatedSection delay={0.4}>
                   <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                    Her leadership demonstrates that modern Indian companies are
-                    talented, capable, and prove their mettle in various fields of
-                    the industry.
+                    This leadership demonstrates that modern Indian companies are
+                    talented, capable, and able to prove their mettle across
+                    multiple industrial domains.
                   </p>
                 </AnimatedSection>
                 <AnimatedSection delay={0.5}>
                   <div className="pt-8 border-t border-border/50">
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      <span className="text-foreground font-medium">
-                        Mr. Tirthankar Ghosh
-                      </span>{" "}
-                      provides invaluable technical insight with his engineering
-                      background, guiding the company's precision engineering
+                      The technical leadership team provides invaluable engineering
+                      insight, guiding the company's precision engineering
                       operations.
                     </p>
                   </div>
