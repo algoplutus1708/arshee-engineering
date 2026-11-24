@@ -3,6 +3,7 @@ import { Mail, ArrowRight } from "lucide-react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import engineeringLab from "@/assets/engineering-lab.jpg";
+import { usePageMeta } from "@/hooks/use-page-meta";
 
 function AnimatedSection({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
   const ref = useRef(null);
@@ -45,6 +46,12 @@ const values = [
 ];
 
 export default function Careers() {
+  usePageMeta({
+    title: "Careers | Arshee Engineering & Innovations Pvt. Ltd.",
+    description:
+      "Explore career opportunities at Arshee Engineering & Innovations Pvt. Ltd. Join our railway engineering and testing team.",
+  });
+
   const heroRef = useRef(null);
   const imageRef = useRef(null);
   const { scrollYProgress: heroProgress } = useScroll({

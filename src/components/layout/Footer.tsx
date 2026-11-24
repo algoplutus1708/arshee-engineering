@@ -1,24 +1,19 @@
-import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import { motion, useInView } from "framer-motion";
-import logo from "@/assets/Logo.jpg";
+import { motion } from "framer-motion";
+import { AnimatedSection } from "@/components/common/AnimatedSection";
+import { servicesData } from "@/data/services";
+import { siteAssets } from "@/lib/assets";
 
-function AnimatedSection({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-50px" });
-
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 40 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-      transition={{ duration: 0.7, delay, ease: [0.25, 0.4, 0.25, 1] }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
-}
+const companyLinks = [
+  { name: "Home", path: "/" },
+  { name: "About Us", path: "/about" },
+  { name: "Services", path: "/services" },
+  { name: "Clientele", path: "/clientele" },
+  { name: "Technical Partners", path: "/technical-partners" },
+  { name: "Careers", path: "/careers" },
+  { name: "Contact", path: "/contact" },
+];
 
 export function Footer() {
   return (
@@ -41,7 +36,7 @@ export function Footer() {
               href="mailto:Info@arshee-enginv.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
-              className="inline-flex items-center justify-center mt-12 px-10 py-5 rounded-full bg-foreground text-background font-medium text-lg transition-colors hover:bg-foreground/90"
+              className="inline-flex items-center justify-center mt-12 px-8 md:px-10 py-4 md:py-5 rounded-full bg-foreground text-background font-medium text-base md:text-lg transition-colors hover:bg-foreground/90"
             >
               Send your CV to Info@arshee-enginv.com
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -53,8 +48,8 @@ export function Footer() {
       {/* Footer */}
       <footer className="bg-foreground text-background py-20 md:py-24">
         <div className="container-wide">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
-            {/* Column 1: Logo */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
+            {/* Column 1: Logo & Identity */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -62,68 +57,111 @@ export function Footer() {
               viewport={{ once: true }}
             >
               <div className="mb-6">
-                <img 
-                  src={logo} 
-                  alt="Arshee Engineering" 
-                  className="h-20 w-auto rounded-lg bg-white p-1" 
+                <img
+                  src={siteAssets.logo}
+                  alt="Arshee Engineering & Innovations Pvt. Ltd."
+                  className="h-16 w-auto object-contain"
                 />
               </div>
-              <p className="mt-4 text-background/50 text-sm">
-                Arshee Engineering Company
+              <p className="mt-4 text-background/85 font-medium text-sm">
+                Arshee Engineering &amp; Innovations Pvt. Ltd.
               </p>
-              <p className="mt-2 text-background/40 text-xs">
-                Passionate about Precision Technology
+              <p className="mt-2 text-background/50 text-xs">
+                Passionate About Precision Technology
               </p>
             </motion.div>
 
-            {/* Column 2: Address */}
+            {/* Column 2: Navigation */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1, ease: [0.25, 0.4, 0.25, 1] }}
+              transition={{ duration: 0.6, delay: 0.08, ease: [0.25, 0.4, 0.25, 1] }}
               viewport={{ once: true }}
             >
               <h4 className="font-medium mb-4 text-background/50 text-xs uppercase tracking-widest">
-                Address
+                Navigation
               </h4>
-              <p className="text-background/80 leading-relaxed">
-                6/41 Netaji Nagar,
-                <br />
-                Near Netaji Nagar Women's College,
-                <br />
-                Kolkata - 700091
-              </p>
+              <ul className="space-y-2.5 text-sm text-background/80">
+                {companyLinks.map((link) => (
+                  <li key={link.path}>
+                    <Link
+                      to={link.path}
+                      className="hover:text-background transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </motion.div>
 
-            {/* Column 3: Contact */}
+            {/* Column 3: Services */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.14, ease: [0.25, 0.4, 0.25, 1] }}
+              viewport={{ once: true }}
+            >
+              <h4 className="font-medium mb-4 text-background/50 text-xs uppercase tracking-widest">
+                Services
+              </h4>
+              <ul className="space-y-2.5 text-sm text-background/80">
+                {servicesData.map((service) => (
+                  <li key={service.slug}>
+                    <Link
+                      to={`/services/${service.slug}`}
+                      className="hover:text-background transition-colors"
+                    >
+                      {service.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            {/* Column 4: Address & Contact */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2, ease: [0.25, 0.4, 0.25, 1] }}
               viewport={{ once: true }}
+              className="space-y-6"
             >
-              <h4 className="font-medium mb-4 text-background/50 text-xs uppercase tracking-widest">
-                Contact
-              </h4>
-              <div className="space-y-3 text-background/80">
-                <p>
-                  <motion.a
-                    href="mailto:Info@arshee-enginv.com"
-                    whileHover={{ x: 4 }}
-                    className="inline-block hover:text-background transition-colors"
-                  >
-                    Info@arshee-enginv.com
-                  </motion.a>
+              <div>
+                <h4 className="font-medium mb-3 text-background/50 text-xs uppercase tracking-widest">
+                  Address
+                </h4>
+                <p className="text-sm text-background/80 leading-relaxed">
+                  6/41 Netaji Nagar,
+                  <br />
+                  Near Netaji Nagar Women&apos;s College,
+                  <br />
+                  Kolkata - 700091
                 </p>
-                <p>
-                  <motion.a
-                    href="tel:+913345180382"
-                    whileHover={{ x: 4 }}
-                    className="inline-block hover:text-background transition-colors"
-                  >
-                    033 451 80382
-                  </motion.a>
-                </p>
+              </div>
+
+              <div>
+                <h4 className="font-medium mb-3 text-background/50 text-xs uppercase tracking-widest">
+                  Contact
+                </h4>
+                <div className="space-y-2 text-sm text-background/80">
+                  <p>
+                    <a
+                      href="mailto:Info@arshee-enginv.com"
+                      className="inline-block hover:text-background transition-colors"
+                    >
+                      Info@arshee-enginv.com
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      href="tel:+913345180382"
+                      className="inline-block hover:text-background transition-colors"
+                    >
+                      033 451 80382
+                    </a>
+                  </p>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -133,12 +171,12 @@ export function Footer() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3, ease: [0.25, 0.4, 0.25, 1] }}
             viewport={{ once: true }}
-            className="mt-20 pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4"
+            className="mt-16 pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4"
           >
-            <p className="text-sm text-background/40">
-              © {new Date().getFullYear()} Arshee Engineering Company
+            <p className="text-sm text-background/45 text-center md:text-left">
+              © {new Date().getFullYear()} Arshee Engineering &amp; Innovations Pvt. Ltd.
             </p>
-            <p className="text-sm text-background/40">Make in India Initiative</p>
+            <p className="text-sm text-background/45">Make in India Initiative</p>
           </motion.div>
         </div>
       </footer>

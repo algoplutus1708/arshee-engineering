@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
+import { usePageMeta } from "@/hooks/use-page-meta";
 
 // UPDATED: Your new Google Apps Script URL
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxBOdbn3muxofeiFzV-yUUa07UEcBI58iTIppjU_UyZJkV2QhA6d7LXidiLXKEZ158U/exec"; 
@@ -49,6 +50,12 @@ const contactInfo = [
 ];
 
 export default function Contact() {
+  usePageMeta({
+    title: "Contact Us | Arshee Engineering & Innovations Pvt. Ltd.",
+    description:
+      "Get in touch with Arshee Engineering & Innovations Pvt. Ltd. in Kolkata for railway testing, validation, consulting, retrofitment, and rental inquiries.",
+  });
+
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: heroRef,
